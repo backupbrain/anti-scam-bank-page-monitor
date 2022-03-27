@@ -21,7 +21,7 @@ This is an example of one such system that banking websites could implement.
 
 ## How it works
 
-A common tactic of scammers is to use screen sharing to have a victim log into their bank account website, thereby downloading their balance and transaction history. The scammer then alters the downloaded HTMl of the page to create the illusion that the victim has received a large payment which they must send back.
+A common tactic of scammers is to use screen sharing to have a victim log into their bank account website, thereby downloading their balance and transaction history. The scammer then alters the downloaded HTML of the page to create the illusion that the victim has received a large payment which they must send back.
 
 Victims are typically not tech-literate enough to understand that only their client-side HTML has been altered and are unaware that they can re-load accurate information by refreshing the page.
 
