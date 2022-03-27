@@ -19,7 +19,6 @@ const createHashFromElement = async (elementId) => {
 }
 
 const setInitialState = async () => {
-    console.log('setting up....')
     // create a hash of the sensitive page data
     baseAccountInformationHash = await createHashFromElement('account-information')
     baseTransactionHistoryHash = await createHashFromElement('transaction-history')
@@ -42,7 +41,7 @@ const didStateChange = async () => {
 }
 
 const displayContentChangedWarningBanner = () => {
-    // check for an existing warning banner
+    // keep the banner in memory so it's difficult to alter
     const banner = `
         <div class="alert alert-danger sticky-top" role="alert" id="content-change-alert">
             <div class="uppercase"><strong>Danger!</strong></div>
@@ -51,6 +50,7 @@ const displayContentChangedWarningBanner = () => {
             Please reload this page to get the latest information about your account.
         </div>
     `
+    // check for an existing warning banner
     const existingAlert = document.getElementById('content-change-alert')
     if (existingAlert === null) {
         const body = document.body
@@ -59,7 +59,9 @@ const displayContentChangedWarningBanner = () => {
 }
 
 const startMonitoring = async () => {
+    // initialize the system
     await setInitialState()
+    // periodically monitor for changes
     monitorTimeoutId = setInterval(() => {
         didStateChange().then(wasChangeDetected => {
             if (wasChangeDetected) {
