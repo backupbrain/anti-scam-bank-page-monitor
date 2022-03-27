@@ -2,6 +2,8 @@
 
 This code demonstrates a method for banks to use client-side monitoring to detect if HTML has been altered on an already-downloaded bank page.
 
+## Live Demo
+
 A live demo can be found at [https://backupbrain.github.io/anti-scam-bank-page-monitor/demo.html](https://backupbrain.github.io/anti-scam-bank-page-monitor/demo.html)
 
 ## Why this exists
@@ -11,6 +13,11 @@ Bank, support, and gift card scams are on the rise in the United States, causing
 While consumer education is helpful in reducing harm and and police investigations are helpful in making the cost of running these scams more difficult, there are some simple systems that can be implemented by companies that can make these scams much harder to implement. 
 
 This is an example of one such system that banking websites could implement.
+
+## Screen shot
+
+![Screenshot](https://github.com/backupbrain/anti-scam-bank-page-monitor/blob/main/screenshot.png?raw=true)
+
 
 ## How it works
 
@@ -27,6 +34,3 @@ If this banner is closed or deleted, it will re-appear after a short time again,
 The banner is inserted in the `<body>` element so that no containing element can be deleted to prevent the banner from appearing. The banner content is held in Javascript rather than a `<template>` so that a scammer will have a harder time altering the resulting banner.
 
 Try it out online at [https://backupbrain.github.io/anti-scam-bank-page-monitor/demo.html](https://backupbrain.github.io/anti-scam-bank-page-monitor/demo.html). Edit the account balance or transactions with the Inspector to trigger the banner after 5 seconds.
-
-
-![Screenshot](https://github.com/backupbrain/anti-scam-bank-page-monitor/blob/main/screenshot.png?raw=true)
