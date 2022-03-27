@@ -10,11 +10,11 @@ const createHashFromElement = async (elementId) => {
     // grab the HTML from the element
     const html = document.getElementById(elementId).outerHTML
     // prepare for digest by encoding into byptes
-    const encodedHtml = encoder.encode(html)
+    const htmlBytes = encoder.encode(html)
     // create a unique identifier for that HTML
-    const digest = await crypto.subtle.digest('SHA-1', encodedHtml)
+    const digestBytes = await crypto.subtle.digest('SHA-1', htmlBytes)
     // decode into text for comparison
-    const hash = decoder.decode(digest)
+    const hash = decoder.decode(digestBytes)
     return hash
 }
 
