@@ -4,7 +4,7 @@ This code demonstrates a method for banks to use client-side monitoring to detec
 
 A live demo can be found at [https://backupbrain.github.io/anti-scam-bank-page-monitor/demo.html](https://backupbrain.github.io/anti-scam-bank-page-monitor/demo.html)
 
-## WHy this exists
+## Why this exists
 
 Bank, support, and gift card scams are on the rise in the United States, causing a reported loss [$148 million dollars in 2021](https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2021/12/scammers-prefer-gift-cards-not-just-any-card-will-do).
 
