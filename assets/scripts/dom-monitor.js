@@ -22,7 +22,6 @@ const setInitialState = async () => {
     // create a hash of the sensitive page data
     baseAccountInformationHash = await createHashFromElement('account-information')
     baseTransactionHistoryHash = await createHashFromElement('transaction-history')
-    console.log(baseAccountInformationHash)
 }
 
 const didStateChange = async () => {
@@ -30,7 +29,6 @@ const didStateChange = async () => {
     // create a hash of the sensitive page data
     const currentAccountInformationHash = await createHashFromElement('account-information')
     const currentTransactionHistoryHash = await createHashFromElement('transaction-history')
-    console.log(currentAccountInformationHash)
     // check if the hashes have changed
     if (currentAccountInformationHash != baseAccountInformationHash ||
         currentTransactionHistoryHash != baseTransactionHistoryHash
