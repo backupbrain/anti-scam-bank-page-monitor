@@ -10,7 +10,7 @@ A live demo can be found at [https://backupbrain.github.io/anti-scam-bank-page-m
 
 Bank, support, and gift card scams are on the rise in the United States, causing a reported loss [148 million dollars in 2021](https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2021/12/scammers-prefer-gift-cards-not-just-any-card-will-do).
 
-While consumer education helps reduce harm and and police investigations help make the cost of running these scams more difficult, some simple systems can be implemented by companies that can make these scams much harder to implement.
+While consumer education helps reduce harm and police investigations help make the cost of running these scams more difficult, some simple systems can be implemented by companies that can make these scams much harder to implement.
 
 This is an example of one such system that banking websites could implement, which I call "Client-side Content Revision Monitoring (CCRM)", because the acronym doesn’t collide with any major existing technologies or government organizations.
 
